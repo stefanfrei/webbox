@@ -32,6 +32,7 @@
     --article-background-color: #fff;
     --article-color: #1f1f1f;
     --article-header-brand-color: rgba(1, 103, 161);
+    --article-med-spacing: 12px;
     --article-small-spacing: 8px;
     --article-standard-spacing: 24px;
     --article-xsmall-spacing: 4px;
@@ -273,6 +274,26 @@ nav a:hover {
     flex-grow: 1;
 }
 
+.flex > .flex-grow-2 {
+    flex-basis: 0;
+    flex-grow: 2;
+}
+
+.flex > .flex-grow-3 {
+    flex-basis: 0;
+    flex-grow: 3;
+}
+
+.flex > .flex-grow-4 {
+    flex-basis: 0;
+    flex-grow: 4;
+}
+
+.flex > .flex-grow-5 {
+    flex-basis: 0;
+    flex-grow: 5;
+}
+
 .flex-dir-row {
     flex-direction: row;
 }
@@ -292,8 +313,29 @@ nav a:hover {
 .lh-std {
     line-height: 1.4rem;
 }
+
+.mb-sm {
+    margin-bottom: var(--article-small-spacing);
+}
+
+.mb-std {
+    margin-bottom: var(--article-standard-spacing);
+}
+
 .ml-xs {
     margin-left: var(--article-xsmall-spacing);
+}
+
+.ml-std {
+    margin-left: var(--article-standard-spacing);
+}
+
+.mr-std {
+    margin-right: var(--article-standard-spacing);
+}
+
+.mt-std {
+    margin-top: var(--article-standard-spacing);
 }
 
 .pt-std {
@@ -422,5 +464,13 @@ article .teaser-para {
 
 .article-header-text {
     font-size: 1rem;
+}
+
+.articles-without-title-story {
+    background-color: var(--article-background-color);
+}
+
+.p-teaser-art-row {
+    padding: var(--article-standard-spacing);
 }
 /* Article styles end*/
