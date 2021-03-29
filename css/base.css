@@ -27,10 +27,14 @@
 
 
 :root {
-    --article-author-color: #686868;
+    --article-silent-color: #6e6e6e;
+    --article-xsilent-color: #cccccc;
     --article-background-color: #fff;
     --article-color: #1f1f1f;
     --article-header-brand-color: rgba(1, 103, 161);
+    --article-small-spacing: 8px;
+    --article-standard-spacing: 24px;
+    --article-xsmall-spacing: 4px;
     --body-background: #2B292E;
     --body-color: #C0C0C0;
     --nav-background: rgba(1, 103, 161, 0.925);
@@ -232,6 +236,13 @@ nav a:hover {
 
 /* nav styles end */
 
+.align-right {
+    text-align: right;
+}
+
+.br-silent-hairline {
+    border-right: 1px solid var(--article-xsilent-color);
+}
 
 .content {
     background-image: url(//unsplash.it/1000/1000);
@@ -248,13 +259,83 @@ nav a:hover {
     width: 1068px;
 }
 
-.news-area {
-
+.hr {
+    background: #e0e0e0;
+    height: 1px;
 }
+
+.flex {
+    display: flex;
+}
+
+.flex-dir-row {
+    flex-direction: row;
+}
+
+.font-silent {
+    color: var(--article-silent-color);
+}
+
+.font-xsilent {
+    color: var(--article-xsilent-color);
+}
+
+.just {
+    text-align: justify;
+}
+
+.lh-std {
+    line-height: 1.4rem;
+}
+.ml-xs {
+    margin-left: var(--article-xsmall-spacing);
+}
+
+.pt-std {
+    padding-top: var(--article-standard-spacing);
+}
+
+.pr-std {
+    padding-right: var(--article-standard-spacing);
+}
+
+.pb-std {
+    padding-bottom:var(--article-standard-spacing);
+}
+
+.pl-std {
+    padding-left: var(--article-standard-spacing);
+}
+
+.ptb-std {
+    padding-bottom: var(--article-standard-spacing);
+    padding-top: var(--article-standard-spacing);
+}
+
+.p-std {
+    padding: var(--article-standard-spacing);
+}
+
+.pt-sm {
+    padding-top: var(--article-small-spacing);
+}
+
+.pb-sm {
+    padding-bottom: var(--article-small-spacing);
+}
+
+.ptb-sm {
+    padding-bottom: var(--article-small-spacing);
+    padding-top: var(--article-small-spacing);
+}
+
+.p-sm {
+    padding: var(--article-small-spacing);
+}
+
 /* Article styles */
 article {
     color: var(--article-color);
-    margin-bottom: 24px;
     position: relative;
 }
 
@@ -263,13 +344,17 @@ article a {
     text-decoration: none;
 }
 
-article h2 {
-    font-size: 2rem;
-    margin: 0 0 24px 0;
+article figure {
+    margin: 0;
 }
 
-article img {
-    right: 24px;
+article h2 {
+    font-size: 2rem;
+    margin: 0 0 var(--article-standard-spacing) 0;
+}
+
+article img.teaser-image {
+    right: var(--article-standard-spacing);
     position: absolute;
     top: 0;
     z-index: 0;
@@ -283,10 +368,11 @@ article .box {
 article .spacer {
     height: 30px;
 }
+
 article .teaser {
     background-color: var(--article-background-color);
     min-height: 404px;
-    padding: 24px;
+    padding: var(--article-standard-spacing);
     position: relative;
     width: 332px;
     z-index: 1;
@@ -307,7 +393,7 @@ article .header-main:hover {
 }
 
 article .author {
-    color: #686868;
+    color: var(--article-silent-color);
     margin-left: 4px;
 }
 
@@ -316,4 +402,20 @@ article .teaser-para {
     line-height: 1.6rem;
 }
 
+.article {
+    background: var(--article-background-color);
+    padding: var(--article-standard-spacing);
+}
+
+.article-header-w {
+    max-width: 800px;
+}
+
+.article-header-w h3 {
+    font-size: 1.5rem;
+}
+
+.article-header-text {
+    font-size: 1rem;
+}
 /* Article styles end*/
