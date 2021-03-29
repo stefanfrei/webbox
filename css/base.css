@@ -32,6 +32,7 @@
     --article-background-color: #fff;
     --article-color: #1f1f1f;
     --article-header-brand-color: rgba(1, 103, 161);
+    --article-med-spacing: 12px;
     --article-small-spacing: 8px;
     --article-standard-spacing: 24px;
     --article-xsmall-spacing: 4px;
@@ -292,8 +293,17 @@ nav a:hover {
 .lh-std {
     line-height: 1.4rem;
 }
+
 .ml-xs {
     margin-left: var(--article-xsmall-spacing);
+}
+
+.ml-std {
+    margin-left: var(--article-standard-spacing);
+}
+
+.mr-std {
+    margin-right: var(--article-standard-spacing);
 }
 
 .pt-std {
@@ -422,5 +432,13 @@ article .teaser-para {
 
 .article-header-text {
     font-size: 1rem;
+}
+
+.articles-without-title-story {
+    background-color: var(--article-background-color);
+}
+
+.p-teaser-art-row {
+    padding: var(--article-standard-spacing);
 }
 /* Article styles end*/
