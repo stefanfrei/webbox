@@ -41,6 +41,8 @@
     --color-neutral-800: rgba(31, 31, 31);
     --color-neutral-900: rgba(0, 0, 0);
 
+    --font-serif: 'Playfair Display', serif;
+
     --space-xxs: .125rem;
     --space-xs: .25rem;
     --space-s: .5rem;
@@ -68,7 +70,7 @@ p {
 body {
     background: var(--color-primary-900);
     color: var(--color-primary-100);
-    font-family : corbel, verdana, arial, helvetica, sans-serif;
+    font-family : var(--font-serif);
     font-weight: 400;
 }
 
@@ -90,6 +92,7 @@ body {
 
 header.nav {
     background: var(--color-primary-600-925);
+    min-height: 5.4375rem;
     position: fixed;
     text-align: center;
     width: 100%;
@@ -277,7 +280,7 @@ nav a:hover {
     background-color: var(--color-neutral-700);
     background-blend-mode: multiply;
     background-size: cover;
-    padding-top: 5.1875rem;
+    padding-top: 5.4375rem;
 }
 
 .container {
@@ -468,7 +471,7 @@ article .author {
 }
 
 article .teaser-para {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6rem;
 }
 
