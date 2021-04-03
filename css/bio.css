@@ -1,0 +1,13 @@
+.finger {
+    display: none;
+}
+
+.finger img {
+    width: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+    .finger {
+        display: flex;
+    }
+}
