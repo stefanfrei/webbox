@@ -151,6 +151,10 @@ body {
     flex-grow: 0;
 }
 
+.flex-vec-grow-1 > * {
+    flex-grow: 1;
+}
+
 .flex-vec-shrink-1 > * {
     flex-shrink: 1;
 }
@@ -159,23 +163,23 @@ body {
     padding: var(--size-xs);
 }
 
-.flex > .flex-even {
+.flex-basis-0 {
     flex-basis: 0;
 }
 
-.flex > .flex-grow-2 {
+.flex-grow-2 {
     flex-grow: 2;
 }
 
-.flex > .flex-grow-3 {
+.flex-grow-3 {
     flex-grow: 3;
 }
 
-.flex > .flex-grow-4 {
+.flex-grow-4 {
     flex-grow: 4;
 }
 
-.flex > .flex-grow-5 {
+.flex-grow-5 {
     flex-grow: 5;
 }
 

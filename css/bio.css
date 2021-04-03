@@ -6,8 +6,24 @@
     width: 1.5rem;
 }
 
+.bio-station > div {
+    padding: var(--size-n);
+}
+
 @media screen and (min-width: 800px) {
     .finger {
         display: flex;
+    }
+
+    .bio-station {
+        display: flex;
+    }
+
+    .bio-station > div {
+        padding: var(--size-n);
+    }
+
+    .bio-station > div:first-child {
+        font-weight: 700;
     }
 }
