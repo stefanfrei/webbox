@@ -127,6 +127,10 @@ body {
     justify-content: center;
 }
 
+.flex-just-space-evenly {
+    justify-content: space-evenly;
+}
+
 .flex > .flex-grow-0 {
     flex-grow: 0;
 }
