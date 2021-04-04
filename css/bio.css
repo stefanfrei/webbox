@@ -10,6 +10,14 @@
     padding: var(--size-n);
 }
 
+.bio-station .bs-employer-large {
+    display: none;
+}
+
+.bio-station .bs-employer-small {
+    display: inline;
+}
+
 @media screen and (min-width: 800px) {
     .finger {
         display: flex;
@@ -25,5 +33,14 @@
 
     .bio-station > div:first-child {
         font-weight: 700;
+    }
+
+    .bio-station .bs-employer-large {
+        display: block;
+        font-weight: 400;
+    }
+
+    .bio-station .bs-employer-small {
+        display: none;
     }
 }
