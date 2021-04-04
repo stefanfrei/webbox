@@ -6,8 +6,25 @@
     width: 1.5rem;
 }
 
+.bio-station {
+    border-bottom: 1px solid var(--color-neutral-200);
+}
+
+.bio-station:last-child {
+    border-bottom: none;
+}
+
+.bio-station.career-step {
+    border-bottom: 1px dashed var(--color-neutral-200);
+}
+
 .bio-station > div {
     padding: var(--size-n);
+}
+
+.bio-station ul > ul {
+    list-style-type: square;
+    padding-bottom: var(--size-n);
 }
 
 .bio-station .bs-employer-large {
@@ -24,6 +41,10 @@
     }
 
     .bio-station {
+        display: flex;
+    }
+
+    .bio-station:last-child {
         display: flex;
     }
 
