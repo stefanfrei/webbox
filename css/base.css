@@ -135,9 +135,8 @@ teaser-text {
 
 @media screen and (min-width: 800px) {
     teaser-image {
-        position: absolute;
-        right: var(--size-l);
-        top: calc(-1 * var(--gap));
+        margin-left: calc(-1 * var(--size-xxl));
+        margin-top: calc(-1 * var(--gap));
     }
 }
 /* Tag defs end */
@@ -493,6 +492,11 @@ article h3 {
 
     article main > *:last-child {
         padding-left: var(--size-n);
+    }
+
+    .lead-article {
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .teaser-area {
