@@ -471,6 +471,11 @@ article h3 {
     padding: 0 0 var(--size-l) 0;
 }
 
+.article-area {
+    background-color: var(--color-neutral-100);
+    padding:0 var(--size-n);
+}
+
 .article-header-w h3 {
     font-size: 1.5rem;
 }
@@ -531,6 +536,10 @@ article h3 {
         padding-left: var(--size-n);
     }
 
+    .article-area {
+        padding: 0 var(--size-l);
+    }
+
     .lead-article {
         display: flex;
         flex-direction: row-reverse;
@@ -546,7 +555,6 @@ article h3 {
     }
 
     .teaser-area {
-        background-color: var(--color-neutral-100);
         padding: 0 var(--size-l);
     }
 
